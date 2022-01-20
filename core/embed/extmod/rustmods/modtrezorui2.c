@@ -30,6 +30,7 @@ STATIC MP_DEFINE_CONST_FUN_OBJ_1(mod_trezorui2_layout_new_example_obj,
                                  ui_layout_new_example);
 #elif TREZOR_MODEL == 1
 /// def layout_new_confirm_action(
+///     *,
 ///     title: str,
 ///     action: str | None,
 ///     description: str | None,
@@ -38,15 +39,16 @@ STATIC MP_DEFINE_CONST_FUN_OBJ_1(mod_trezorui2_layout_new_example_obj,
 ///     hold: bool | None,
 ///     reverse: bool,
 /// ) -> int:
-///     """Example layout. All arguments must be passed as kwargs."""
+///     """Example layout."""
 STATIC MP_DEFINE_CONST_FUN_OBJ_KW(mod_trezorui2_layout_new_confirm_action_obj,
                                   0, ui_layout_new_confirm_action);
 /// def layout_new_confirm_text(
+///     *,
 ///     title: str,
 ///     data: str,
 ///     description: str | None,
 /// ) -> int:
-///     """Example layout. All arguments must be passed as kwargs."""
+///     """Example layout."""
 STATIC MP_DEFINE_CONST_FUN_OBJ_KW(mod_trezorui2_layout_new_confirm_text_obj, 0,
                                   ui_layout_new_confirm_text);
 #endif
