@@ -107,4 +107,5 @@ async def verify_message(ctx: wire.Context, msg: VerifyMessage) -> Success:
         verify=True,
     )
 
+    await show_success(ctx, "success_verify", "The signature is valid.")
     return Success(message="Message verified")
